@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B0E731A1B28867300C1AEC8 /* CamerRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E73181B28867300C1AEC8 /* CamerRecordViewController.m */; };
+		7B0E731B1B28867300C1AEC8 /* CamerRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73191B28867300C1AEC8 /* CamerRecordViewController.xib */; };
+		7B0E731D1B28869500C1AEC8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0E731C1B28869500C1AEC8 /* AVFoundation.framework */; };
+		7B0E731F1B2886A000C1AEC8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0E731E1B2886A000C1AEC8 /* AssetsLibrary.framework */; };
+		7B0E732E1B288A2E00C1AEC8 /* bg_countdown_view@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73201B288A2E00C1AEC8 /* bg_countdown_view@2x.png */; };
+		7B0E732F1B288A2E00C1AEC8 /* btn_camera_done_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73211B288A2E00C1AEC8 /* btn_camera_done_a@2x.png */; };
+		7B0E73301B288A2E00C1AEC8 /* btn_cancel_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73221B288A2E00C1AEC8 /* btn_cancel_a@2x.png */; };
+		7B0E73311B288A2E00C1AEC8 /* btn_del_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73231B288A2E00C1AEC8 /* btn_del_a@2x.png */; };
+		7B0E73321B288A2E00C1AEC8 /* btn_tabBar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73241B288A2E00C1AEC8 /* btn_tabBar_bg@2x.png */; };
+		7B0E73331B288A2E00C1AEC8 /* btn_video_flash_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73251B288A2E00C1AEC8 /* btn_video_flash_close@2x.png */; };
+		7B0E73341B288A2E00C1AEC8 /* btn_video_flash_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73261B288A2E00C1AEC8 /* btn_video_flash_open@2x.png */; };
+		7B0E73351B288A2E00C1AEC8 /* btn_video_flip_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73271B288A2E00C1AEC8 /* btn_video_flip_camera@2x.png */; };
+		7B0E73361B288A2E00C1AEC8 /* camera_focus_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73281B288A2E00C1AEC8 /* camera_focus_red@2x.png */; };
+		7B0E73371B288A2E00C1AEC8 /* icon_btn_camera_flash_auto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E73291B288A2E00C1AEC8 /* icon_btn_camera_flash_auto@2x.png */; };
+		7B0E73381B288A2E00C1AEC8 /* icon_btn_camera_flash_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E732A1B288A2E00C1AEC8 /* icon_btn_camera_flash_off@2x.png */; };
+		7B0E73391B288A2E00C1AEC8 /* icon_btn_camera_flash_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E732B1B288A2E00C1AEC8 /* icon_btn_camera_flash_on@2x.png */; };
+		7B0E733A1B288A2E00C1AEC8 /* icon_facial_btn_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E732C1B288A2E00C1AEC8 /* icon_facial_btn_take@2x.png */; };
+		7B0E733B1B288A2E00C1AEC8 /* sc_btn_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E732D1B288A2E00C1AEC8 /* sc_btn_take@2x.png */; };
+		9D18B00518507B15009F823F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D18B00418507B15009F823F /* AudioToolbox.framework */; };
+		9D6BA5A31859B8A200FA7D3A /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BA5A21859B8A200FA7D3A /* AudioPlayer.m */; };
+		9D7E6C0D1848857D003D9E06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E6C0C1848857D003D9E06 /* UIKit.framework */; };
+		9D7E6C0F1848857D003D9E06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E6C0E1848857D003D9E06 /* Foundation.framework */; };
+		9D7E6C111848857D003D9E06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E6C101848857D003D9E06 /* CoreGraphics.framework */; };
+		9D7E6C171848857D003D9E06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E6C151848857D003D9E06 /* InfoPlist.strings */; };
+		9D7E6C191848857D003D9E06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6C181848857D003D9E06 /* main.m */; };
+		9D7E6C1D1848857D003D9E06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6C1C1848857D003D9E06 /* AppDelegate.m */; };
+		9D7E6C1F1848857D003D9E06 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E6C1E1848857D003D9E06 /* Default.png */; };
+		9D7E6C211848857D003D9E06 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E6C201848857D003D9E06 /* Default@2x.png */; };
+		9D7E6C231848857D003D9E06 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E6C221848857D003D9E06 /* Default-568h@2x.png */; };
+		9D7E6C261848857D003D9E06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6C251848857D003D9E06 /* ViewController.m */; };
+		9D7E6C291848857D003D9E06 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E6C271848857D003D9E06 /* ViewController.xib */; };
+		9D7E6C3118488772003D9E06 /* AudioRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6C3018488772003D9E06 /* AudioRecoder.m */; };
+		9DBE4EB618586379004B8820 /* RtmpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE4EB518586379004B8820 /* RtmpClient.m */; };
+		AD83E7C51B184D7F005359BB /* BOBOAACEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = AD83E7C31B184D7F005359BB /* BOBOAACEncoder.c */; };
+		AD83E91B1B1867E6005359BB /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD83E9161B1867E6005359BB /* libavcodec.a */; };
+		AD83E91C1B1867E6005359BB /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD83E9171B1867E6005359BB /* libavformat.a */; };
+		AD83E91D1B1867E6005359BB /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD83E9181B1867E6005359BB /* libavutil.a */; };
+		AD83E91E1B1867E6005359BB /* libfdk-aac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD83E9191B1867E6005359BB /* libfdk-aac.a */; };
+		AD83E91F1B1867E6005359BB /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD83E91A1B1867E6005359BB /* libswresample.a */; };
+		AD83E9211B188344005359BB /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD83E9201B188344005359BB /* libbz2.dylib */; };
+		AD83E9231B18834D005359BB /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD83E9221B18834D005359BB /* libiconv.dylib */; };
+		AD9087BB1B26D5650085AE56 /* RTMPPublish.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9087B91B26D5650085AE56 /* RTMPPublish.c */; };
+		AD9087BD1B26E47A0085AE56 /* test1.flv in Resources */ = {isa = PBXBuildFile; fileRef = AD9087BC1B26E47A0085AE56 /* test1.flv */; };
+		BF491FDE18EAC04C0025C1BB /* librtmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF491FDD18EAC04C0025C1BB /* librtmp.a */; };
+		BF491FE018EAC1030025C1BB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF491FDF18EAC1030025C1BB /* libz.dylib */; };
+		BF491FE218EAC4270025C1BB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF491FE118EAC4270025C1BB /* libssl.a */; };
+		BF491FE418EAC42C0025C1BB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF491FE318EAC42C0025C1BB /* libcrypto.a */; };
+		BF491FE818EACF7D0025C1BB /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF491FE518EACF7D0025C1BB /* libogg.a */; };
+		BF491FE918EACF7D0025C1BB /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF491FE618EACF7D0025C1BB /* libspeex.a */; };
+		BF491FEA18EACF7D0025C1BB /* libspeexdsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF491FE718EACF7D0025C1BB /* libspeexdsp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B0E73171B28867300C1AEC8 /* CamerRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamerRecordViewController.h; sourceTree = "<group>"; };
+		7B0E73181B28867300C1AEC8 /* CamerRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamerRecordViewController.m; sourceTree = "<group>"; };
+		7B0E73191B28867300C1AEC8 /* CamerRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CamerRecordViewController.xib; sourceTree = "<group>"; };
+		7B0E731C1B28869500C1AEC8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7B0E731E1B2886A000C1AEC8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		7B0E73201B288A2E00C1AEC8 /* bg_countdown_view@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_countdown_view@2x.png"; sourceTree = "<group>"; };
+		7B0E73211B288A2E00C1AEC8 /* btn_camera_done_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_camera_done_a@2x.png"; sourceTree = "<group>"; };
+		7B0E73221B288A2E00C1AEC8 /* btn_cancel_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_cancel_a@2x.png"; sourceTree = "<group>"; };
+		7B0E73231B288A2E00C1AEC8 /* btn_del_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_del_a@2x.png"; sourceTree = "<group>"; };
+		7B0E73241B288A2E00C1AEC8 /* btn_tabBar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_tabBar_bg@2x.png"; sourceTree = "<group>"; };
+		7B0E73251B288A2E00C1AEC8 /* btn_video_flash_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_video_flash_close@2x.png"; sourceTree = "<group>"; };
+		7B0E73261B288A2E00C1AEC8 /* btn_video_flash_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_video_flash_open@2x.png"; sourceTree = "<group>"; };
+		7B0E73271B288A2E00C1AEC8 /* btn_video_flip_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_video_flip_camera@2x.png"; sourceTree = "<group>"; };
+		7B0E73281B288A2E00C1AEC8 /* camera_focus_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_focus_red@2x.png"; sourceTree = "<group>"; };
+		7B0E73291B288A2E00C1AEC8 /* icon_btn_camera_flash_auto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_btn_camera_flash_auto@2x.png"; sourceTree = "<group>"; };
+		7B0E732A1B288A2E00C1AEC8 /* icon_btn_camera_flash_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_btn_camera_flash_off@2x.png"; sourceTree = "<group>"; };
+		7B0E732B1B288A2E00C1AEC8 /* icon_btn_camera_flash_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_btn_camera_flash_on@2x.png"; sourceTree = "<group>"; };
+		7B0E732C1B288A2E00C1AEC8 /* icon_facial_btn_take@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_facial_btn_take@2x.png"; sourceTree = "<group>"; };
+		7B0E732D1B288A2E00C1AEC8 /* sc_btn_take@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_btn_take@2x.png"; sourceTree = "<group>"; };
+		9D18B00418507B15009F823F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9D6BA5A11859B8A200FA7D3A /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		9D6BA5A21859B8A200FA7D3A /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		9D7E6C091848857D003D9E06 /* SayHey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SayHey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7E6C0C1848857D003D9E06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D7E6C0E1848857D003D9E06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D7E6C101848857D003D9E06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D7E6C141848857D003D9E06 /* SayHey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SayHey-Info.plist"; sourceTree = "<group>"; };
+		9D7E6C161848857D003D9E06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D7E6C181848857D003D9E06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D7E6C1A1848857D003D9E06 /* SayHey-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SayHey-Prefix.pch"; sourceTree = "<group>"; };
+		9D7E6C1B1848857D003D9E06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D7E6C1C1848857D003D9E06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D7E6C1E1848857D003D9E06 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9D7E6C201848857D003D9E06 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9D7E6C221848857D003D9E06 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9D7E6C241848857D003D9E06 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9D7E6C251848857D003D9E06 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9D7E6C281848857D003D9E06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		9D7E6C2F18488772003D9E06 /* AudioRecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecoder.h; sourceTree = "<group>"; };
+		9D7E6C3018488772003D9E06 /* AudioRecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecoder.m; sourceTree = "<group>"; };
+		9DBE4EB418586379004B8820 /* RtmpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtmpClient.h; sourceTree = "<group>"; };
+		9DBE4EB518586379004B8820 /* RtmpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtmpClient.m; sourceTree = "<group>"; };
+		AD83E7C31B184D7F005359BB /* BOBOAACEncoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BOBOAACEncoder.c; sourceTree = "<group>"; };
+		AD83E7C41B184D7F005359BB /* BOBOAACEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOBOAACEncoder.h; sourceTree = "<group>"; };
+		AD83E9161B1867E6005359BB /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = lib/libavcodec.a; sourceTree = "<group>"; };
+		AD83E9171B1867E6005359BB /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = lib/libavformat.a; sourceTree = "<group>"; };
+		AD83E9181B1867E6005359BB /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = lib/libavutil.a; sourceTree = "<group>"; };
+		AD83E9191B1867E6005359BB /* libfdk-aac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libfdk-aac.a"; path = "lib/libfdk-aac.a"; sourceTree = "<group>"; };
+		AD83E91A1B1867E6005359BB /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = lib/libswresample.a; sourceTree = "<group>"; };
+		AD83E9201B188344005359BB /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		AD83E9221B18834D005359BB /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		AD9087B91B26D5650085AE56 /* RTMPPublish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RTMPPublish.c; sourceTree = "<group>"; };
+		AD9087BA1B26D5650085AE56 /* RTMPPublish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMPPublish.h; sourceTree = "<group>"; };
+		AD9087BC1B26E47A0085AE56 /* test1.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = test1.flv; sourceTree = "<group>"; };
+		BF491FDD18EAC04C0025C1BB /* librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtmp.a; path = lib/librtmp.a; sourceTree = "<group>"; };
+		BF491FDF18EAC1030025C1BB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BF491FE118EAC4270025C1BB /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
+		BF491FE318EAC42C0025C1BB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		BF491FE518EACF7D0025C1BB /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = speex/libogg.a; sourceTree = "<group>"; };
+		BF491FE618EACF7D0025C1BB /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeex.a; path = speex/libspeex.a; sourceTree = "<group>"; };
+		BF491FE718EACF7D0025C1BB /* libspeexdsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeexdsp.a; path = speex/libspeexdsp.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D7E6C061848857D003D9E06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0E731F1B2886A000C1AEC8 /* AssetsLibrary.framework in Frameworks */,
+				7B0E731D1B28869500C1AEC8 /* AVFoundation.framework in Frameworks */,
+				AD83E9231B18834D005359BB /* libiconv.dylib in Frameworks */,
+				AD83E9211B188344005359BB /* libbz2.dylib in Frameworks */,
+				BF491FE018EAC1030025C1BB /* libz.dylib in Frameworks */,
+				BF491FE918EACF7D0025C1BB /* libspeex.a in Frameworks */,
+				BF491FE218EAC4270025C1BB /* libssl.a in Frameworks */,
+				BF491FDE18EAC04C0025C1BB /* librtmp.a in Frameworks */,
+				AD83E91D1B1867E6005359BB /* libavutil.a in Frameworks */,
+				9D18B00518507B15009F823F /* AudioToolbox.framework in Frameworks */,
+				BF491FE818EACF7D0025C1BB /* libogg.a in Frameworks */,
+				BF491FE418EAC42C0025C1BB /* libcrypto.a in Frameworks */,
+				AD83E91F1B1867E6005359BB /* libswresample.a in Frameworks */,
+				AD83E91C1B1867E6005359BB /* libavformat.a in Frameworks */,
+				9D7E6C0D1848857D003D9E06 /* UIKit.framework in Frameworks */,
+				9D7E6C0F1848857D003D9E06 /* Foundation.framework in Frameworks */,
+				9D7E6C111848857D003D9E06 /* CoreGraphics.framework in Frameworks */,
+				AD83E91E1B1867E6005359BB /* libfdk-aac.a in Frameworks */,
+				BF491FEA18EACF7D0025C1BB /* libspeexdsp.a in Frameworks */,
+				AD83E91B1B1867E6005359BB /* libavcodec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D6BA5A41859B8C300FA7D3A /* RtmpClient */ = {
+			isa = PBXGroup;
+			children = (
+				AD9087BC1B26E47A0085AE56 /* test1.flv */,
+				9DBE4EB418586379004B8820 /* RtmpClient.h */,
+				9DBE4EB518586379004B8820 /* RtmpClient.m */,
+				9D7E6C2F18488772003D9E06 /* AudioRecoder.h */,
+				9D7E6C3018488772003D9E06 /* AudioRecoder.m */,
+				AD9087B91B26D5650085AE56 /* RTMPPublish.c */,
+				AD9087BA1B26D5650085AE56 /* RTMPPublish.h */,
+				AD83E7C31B184D7F005359BB /* BOBOAACEncoder.c */,
+				AD83E7C41B184D7F005359BB /* BOBOAACEncoder.h */,
+				9D6BA5A11859B8A200FA7D3A /* AudioPlayer.h */,
+				9D6BA5A21859B8A200FA7D3A /* AudioPlayer.m */,
+			);
+			name = RtmpClient;
+			sourceTree = "<group>";
+		};
+		9D7E6C001848857D003D9E06 = {
+			isa = PBXGroup;
+			children = (
+				9D7E6C121848857D003D9E06 /* SayHey */,
+				9D7E6C0B1848857D003D9E06 /* Frameworks */,
+				9D7E6C0A1848857D003D9E06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D7E6C0A1848857D003D9E06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D7E6C091848857D003D9E06 /* SayHey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D7E6C0B1848857D003D9E06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B0E731E1B2886A000C1AEC8 /* AssetsLibrary.framework */,
+				7B0E731C1B28869500C1AEC8 /* AVFoundation.framework */,
+				AD83E9221B18834D005359BB /* libiconv.dylib */,
+				AD83E9201B188344005359BB /* libbz2.dylib */,
+				AD83E9161B1867E6005359BB /* libavcodec.a */,
+				AD83E9171B1867E6005359BB /* libavformat.a */,
+				AD83E9181B1867E6005359BB /* libavutil.a */,
+				AD83E9191B1867E6005359BB /* libfdk-aac.a */,
+				AD83E91A1B1867E6005359BB /* libswresample.a */,
+				BF491FE518EACF7D0025C1BB /* libogg.a */,
+				BF491FE618EACF7D0025C1BB /* libspeex.a */,
+				BF491FE718EACF7D0025C1BB /* libspeexdsp.a */,
+				BF491FE118EAC4270025C1BB /* libssl.a */,
+				BF491FE318EAC42C0025C1BB /* libcrypto.a */,
+				BF491FDF18EAC1030025C1BB /* libz.dylib */,
+				BF491FDD18EAC04C0025C1BB /* librtmp.a */,
+				9D18B00418507B15009F823F /* AudioToolbox.framework */,
+				9D7E6C0C1848857D003D9E06 /* UIKit.framework */,
+				9D7E6C0E1848857D003D9E06 /* Foundation.framework */,
+				9D7E6C101848857D003D9E06 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D7E6C121848857D003D9E06 /* SayHey */ = {
+			isa = PBXGroup;
+			children = (
+				9D6BA5A41859B8C300FA7D3A /* RtmpClient */,
+				9D7E6C1B1848857D003D9E06 /* AppDelegate.h */,
+				9D7E6C1C1848857D003D9E06 /* AppDelegate.m */,
+				9D7E6C241848857D003D9E06 /* ViewController.h */,
+				9D7E6C251848857D003D9E06 /* ViewController.m */,
+				9D7E6C271848857D003D9E06 /* ViewController.xib */,
+				9D7E6C131848857D003D9E06 /* Supporting Files */,
+				7B0E73171B28867300C1AEC8 /* CamerRecordViewController.h */,
+				7B0E73181B28867300C1AEC8 /* CamerRecordViewController.m */,
+				7B0E73191B28867300C1AEC8 /* CamerRecordViewController.xib */,
+			);
+			path = SayHey;
+			sourceTree = "<group>";
+		};
+		9D7E6C131848857D003D9E06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B0E73201B288A2E00C1AEC8 /* bg_countdown_view@2x.png */,
+				7B0E73211B288A2E00C1AEC8 /* btn_camera_done_a@2x.png */,
+				7B0E73221B288A2E00C1AEC8 /* btn_cancel_a@2x.png */,
+				7B0E73231B288A2E00C1AEC8 /* btn_del_a@2x.png */,
+				7B0E73241B288A2E00C1AEC8 /* btn_tabBar_bg@2x.png */,
+				7B0E73251B288A2E00C1AEC8 /* btn_video_flash_close@2x.png */,
+				7B0E73261B288A2E00C1AEC8 /* btn_video_flash_open@2x.png */,
+				7B0E73271B288A2E00C1AEC8 /* btn_video_flip_camera@2x.png */,
+				7B0E73281B288A2E00C1AEC8 /* camera_focus_red@2x.png */,
+				7B0E73291B288A2E00C1AEC8 /* icon_btn_camera_flash_auto@2x.png */,
+				7B0E732A1B288A2E00C1AEC8 /* icon_btn_camera_flash_off@2x.png */,
+				7B0E732B1B288A2E00C1AEC8 /* icon_btn_camera_flash_on@2x.png */,
+				7B0E732C1B288A2E00C1AEC8 /* icon_facial_btn_take@2x.png */,
+				7B0E732D1B288A2E00C1AEC8 /* sc_btn_take@2x.png */,
+				9D7E6C141848857D003D9E06 /* SayHey-Info.plist */,
+				9D7E6C151848857D003D9E06 /* InfoPlist.strings */,
+				9D7E6C181848857D003D9E06 /* main.m */,
+				9D7E6C1A1848857D003D9E06 /* SayHey-Prefix.pch */,
+				9D7E6C1E1848857D003D9E06 /* Default.png */,
+				9D7E6C201848857D003D9E06 /* Default@2x.png */,
+				9D7E6C221848857D003D9E06 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D7E6C081848857D003D9E06 /* SayHey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7E6C2C1848857D003D9E06 /* Build configuration list for PBXNativeTarget "SayHey" */;
+			buildPhases = (
+				9D7E6C051848857D003D9E06 /* Sources */,
+				9D7E6C061848857D003D9E06 /* Frameworks */,
+				9D7E6C071848857D003D9E06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SayHey;
+			productName = SayHey;
+			productReference = 9D7E6C091848857D003D9E06 /* SayHey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D7E6C011848857D003D9E06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mingliang Chen";
+			};
+			buildConfigurationList = 9D7E6C041848857D003D9E06 /* Build configuration list for PBXProject "SayHey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9D7E6C001848857D003D9E06;
+			productRefGroup = 9D7E6C0A1848857D003D9E06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D7E6C081848857D003D9E06 /* SayHey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D7E6C071848857D003D9E06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0E732F1B288A2E00C1AEC8 /* btn_camera_done_a@2x.png in Resources */,
+				7B0E732E1B288A2E00C1AEC8 /* bg_countdown_view@2x.png in Resources */,
+				7B0E731B1B28867300C1AEC8 /* CamerRecordViewController.xib in Resources */,
+				9D7E6C171848857D003D9E06 /* InfoPlist.strings in Resources */,
+				7B0E73321B288A2E00C1AEC8 /* btn_tabBar_bg@2x.png in Resources */,
+				9D7E6C1F1848857D003D9E06 /* Default.png in Resources */,
+				7B0E73361B288A2E00C1AEC8 /* camera_focus_red@2x.png in Resources */,
+				AD9087BD1B26E47A0085AE56 /* test1.flv in Resources */,
+				7B0E73371B288A2E00C1AEC8 /* icon_btn_camera_flash_auto@2x.png in Resources */,
+				9D7E6C211848857D003D9E06 /* Default@2x.png in Resources */,
+				7B0E73381B288A2E00C1AEC8 /* icon_btn_camera_flash_off@2x.png in Resources */,
+				7B0E73341B288A2E00C1AEC8 /* btn_video_flash_open@2x.png in Resources */,
+				7B0E733B1B288A2E00C1AEC8 /* sc_btn_take@2x.png in Resources */,
+				7B0E73301B288A2E00C1AEC8 /* btn_cancel_a@2x.png in Resources */,
+				7B0E73331B288A2E00C1AEC8 /* btn_video_flash_close@2x.png in Resources */,
+				7B0E73391B288A2E00C1AEC8 /* icon_btn_camera_flash_on@2x.png in Resources */,
+				9D7E6C231848857D003D9E06 /* Default-568h@2x.png in Resources */,
+				7B0E73351B288A2E00C1AEC8 /* btn_video_flip_camera@2x.png in Resources */,
+				7B0E73311B288A2E00C1AEC8 /* btn_del_a@2x.png in Resources */,
+				9D7E6C291848857D003D9E06 /* ViewController.xib in Resources */,
+				7B0E733A1B288A2E00C1AEC8 /* icon_facial_btn_take@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D7E6C051848857D003D9E06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9087BB1B26D5650085AE56 /* RTMPPublish.c in Sources */,
+				9D7E6C191848857D003D9E06 /* main.m in Sources */,
+				9D6BA5A31859B8A200FA7D3A /* AudioPlayer.m in Sources */,
+				9D7E6C1D1848857D003D9E06 /* AppDelegate.m in Sources */,
+				9D7E6C261848857D003D9E06 /* ViewController.m in Sources */,
+				AD83E7C51B184D7F005359BB /* BOBOAACEncoder.c in Sources */,
+				9D7E6C3118488772003D9E06 /* AudioRecoder.m in Sources */,
+				7B0E731A1B28867300C1AEC8 /* CamerRecordViewController.m in Sources */,
+				9DBE4EB618586379004B8820 /* RtmpClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D7E6C151848857D003D9E06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D7E6C161848857D003D9E06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9D7E6C271848857D003D9E06 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D7E6C281848857D003D9E06 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D7E6C2A1848857D003D9E06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Siying Yang (TBLZXZAE96)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Siying Yang (TBLZXZAE96)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/speex\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "09912a66-3244-4b5d-9ca2-55b5e63a17a0";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D7E6C2B1848857D003D9E06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Siying Yang (TBLZXZAE96)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Siying Yang (TBLZXZAE96)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/speex\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "09912a66-3244-4b5d-9ca2-55b5e63a17a0";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D7E6C2D1848857D003D9E06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SayHey/SayHey-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/include\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "SayHey/SayHey-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09912a66-3244-4b5d-9ca2-55b5e63a17a0";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9D7E6C2E1848857D003D9E06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SayHey/SayHey-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/include\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "SayHey/SayHey-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09912a66-3244-4b5d-9ca2-55b5e63a17a0";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D7E6C041848857D003D9E06 /* Build configuration list for PBXProject "SayHey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7E6C2A1848857D003D9E06 /* Debug */,
+				9D7E6C2B1848857D003D9E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7E6C2C1848857D003D9E06 /* Build configuration list for PBXNativeTarget "SayHey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7E6C2D1848857D003D9E06 /* Debug */,
+				9D7E6C2E1848857D003D9E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D7E6C011848857D003D9E06 /* Project object */;
+}
