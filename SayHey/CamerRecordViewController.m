@@ -10,6 +10,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "BOBOAACEncoder.h"
 typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 
 @interface CamerRecordViewController ()<AVCaptureFileOutputRecordingDelegate,AVCaptureVideoDataOutputSampleBufferDelegate>//视频文件输出代理
@@ -68,7 +69,12 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     _captureVideoOutput = [[AVCaptureVideoDataOutput alloc]init];
     
 //    _captureMovieFileOutput=[[AVCaptureMovieFileOutput alloc]init];
-    
+    // 指定像素格式
+    _captureVideoOutput.videoSettings =
+    [NSDictionary dictionaryWithObject:
+     [NSNumber numberWithInt:kCVPixelFormatType_32BGRA]
+                                forKey:(id)kCVPixelBufferPixelFormatTypeKey];
+
     
     //将设备输入添加到会话中
     if ([_captureSession canAddInput:_captureDeviceInput]) {
@@ -215,7 +221,34 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
-    NSLog(@"%@",sampleBuffer);
+    // 为媒体数据设置一个CMSampleBuffer的Core Video图像缓存对象
+    CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+    // 锁定pixel buffer的基地址
+    CVPixelBufferLockBaseAddress(imageBuffer, 0);
+    
+    
+
+    
+    // 得到pixel buffer的行字节数
+
+    // 得到pixel buffer的宽和高
+    size_t width = CVPixelBufferGetWidth(imageBuffer);
+    size_t height = CVPixelBufferGetHeight(imageBuffer);
+    
+    int size = CMSampleBufferGetTotalSampleSize(sampleBuffer);
+    NSLog(@"width :%zu , height:%zu, size:%d , imageBuffer %@,",width,height,size,sampleBuffer);
+    
+    // 得到pixel buffer的基地址
+    uint8_t *rawPixelBase = (uint8_t *)CVPixelBufferGetBaseAddress(imageBuffer);
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(videoOutPut:)]) {
+        
+        [self.delegate videoOutPut:rawPixelBase];
+        
+    }
+    // 解锁pixel buffer
+    CVPixelBufferUnlockBaseAddress(imageBuffer,0);
+    
 }
 -(void)captureOutput:(AVCaptureFileOutput *)captureOutput didStartRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray *)connections{
     NSLog(@"开始录制...");

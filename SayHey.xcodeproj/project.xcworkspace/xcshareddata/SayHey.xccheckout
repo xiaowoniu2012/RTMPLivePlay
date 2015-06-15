@@ -10,29 +10,29 @@
 	<string>SayHey</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6DAFCF54-8DB4-45C3-8736-4BF9EDFDE013</key>
-		<string>https://github.com/illuspas/SayHey</string>
+		<key>FE9471DA308D5CFF88F85188B89322964DF13658</key>
+		<string>https://github.com/xiaowoniu2012/RTMPLivePlay.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SayHey.xcodeproj/project.xcworkspace</string>
+	<string>SayHey.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6DAFCF54-8DB4-45C3-8736-4BF9EDFDE013</key>
+		<key>FE9471DA308D5CFF88F85188B89322964DF13658</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/illuspas/SayHey</string>
+	<string>https://github.com/xiaowoniu2012/RTMPLivePlay.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6DAFCF54-8DB4-45C3-8736-4BF9EDFDE013</string>
+	<string>FE9471DA308D5CFF88F85188B89322964DF13658</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6DAFCF54-8DB4-45C3-8736-4BF9EDFDE013</string>
+			<string>FE9471DA308D5CFF88F85188B89322964DF13658</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SayHey</string>
 		</dict>

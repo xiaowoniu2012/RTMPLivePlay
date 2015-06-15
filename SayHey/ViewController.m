@@ -11,7 +11,7 @@
 #import "AudioRecoder.h"
 #import "BOBOAACEncoder.h"
 #import "CamerRecordViewController.h"
-@interface ViewController ()<AudioRecordDelegate>
+@interface ViewController ()<AudioRecordDelegate,CamerRecordViewControllerDelegate>
 {
     RtmpClient *mRtmpClient;
     BOOL isStartRecord;
@@ -249,8 +249,14 @@ void propListener(	void *                  inClientData,
 - (IBAction)actionCameraRecrod:(UIButton *)sender {
     
     CamerRecordViewController *vc = [[CamerRecordViewController alloc]initWithNibName:@"CamerRecordViewController" bundle:nil];
+    vc.delegate = self;
     [self presentViewController:vc animated:NO completion:^{
         
     }];
+}
+
+- (void)videoOutPut:(uint8_t *)rawData
+{
+    encoderH264(aacEncoder, rawData, 0, NULL, 0);
 }
 @end

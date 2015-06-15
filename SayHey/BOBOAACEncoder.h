@@ -23,13 +23,20 @@ struct BOBOAACEncoder {
     
     AVCodecContext  *pCodeCtx;
     AVCodec         *pCodec;
+    
+    AVCodecContext  *pVideoCodecCtx;
+    AVCodec         *pVideoCodec;
+    
+    
 
     AVStream        *pStream;
+    AVStream        *pVideoStrem;
     int buffer_size;
     uint16_t *samples;
     
     AVFrame     *pFrame;
     AVPacket    packet;
+    AVPacket    videoPacket;
     
     int sample_rate;
     int channels;
@@ -42,12 +49,13 @@ struct BOBOAACEncoder {
 typedef struct BOBOAACEncoder BOBOAACEncoder;
 
 
-//BOBOAACEncoder *encoder_alloc();
+BOBOAACEncoder *encoder_alloc();
 int encoder_pcm_to_aac(BOBOAACEncoder *encoder,void *pcmData,void *encodedData);
 
 
-BOBOAACEncoder *encoder_alloc();
+//BOBOAACEncoder *encoder_alloc();
 BOBOAACEncoder *encoderAlloc(const char *path);
 
 int encoderAAC(BOBOAACEncoder *encoder,uint8_t *inputBuffer,int inputSize,char *outputBuffer,int *outSize);
+int encoderH264(BOBOAACEncoder *encoder,uint8_t *inputBuffer,int inputsize ,char *outputBUffer,int *outsize);
 #endif /* defined(__SayHey__BOBOAACEncoder__) */

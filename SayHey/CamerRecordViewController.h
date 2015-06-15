@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CamerRecordViewController : UIViewController
 
+@class CamerRecordViewController;
+@protocol CamerRecordViewControllerDelegate <NSObject>
+
+- (void)videoOutPut:(uint8_t *)rawData;
+
+@end
+@interface CamerRecordViewController : UIViewController
+@property (nonatomic,assign) id<CamerRecordViewControllerDelegate> delegate;
 @end

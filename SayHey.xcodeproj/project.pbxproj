@@ -25,6 +25,8 @@
 		7B0E73391B288A2E00C1AEC8 /* icon_btn_camera_flash_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E732B1B288A2E00C1AEC8 /* icon_btn_camera_flash_on@2x.png */; };
 		7B0E733A1B288A2E00C1AEC8 /* icon_facial_btn_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E732C1B288A2E00C1AEC8 /* icon_facial_btn_take@2x.png */; };
 		7B0E733B1B288A2E00C1AEC8 /* sc_btn_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B0E732D1B288A2E00C1AEC8 /* sc_btn_take@2x.png */; };
+		7BE741DE1B2B5A2A002392F4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE741DD1B2B5A2A002392F4 /* CoreVideo.framework */; };
+		7BE741E01B2B5A70002392F4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE741DF1B2B5A70002392F4 /* CoreMedia.framework */; };
 		9D18B00518507B15009F823F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D18B00418507B15009F823F /* AudioToolbox.framework */; };
 		9D6BA5A31859B8A200FA7D3A /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BA5A21859B8A200FA7D3A /* AudioPlayer.m */; };
 		9D7E6C0D1848857D003D9E06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E6C0C1848857D003D9E06 /* UIKit.framework */; };
@@ -79,6 +81,8 @@
 		7B0E732B1B288A2E00C1AEC8 /* icon_btn_camera_flash_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_btn_camera_flash_on@2x.png"; sourceTree = "<group>"; };
 		7B0E732C1B288A2E00C1AEC8 /* icon_facial_btn_take@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_facial_btn_take@2x.png"; sourceTree = "<group>"; };
 		7B0E732D1B288A2E00C1AEC8 /* sc_btn_take@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_btn_take@2x.png"; sourceTree = "<group>"; };
+		7BE741DD1B2B5A2A002392F4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7BE741DF1B2B5A70002392F4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		9D18B00418507B15009F823F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9D6BA5A11859B8A200FA7D3A /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		9D6BA5A21859B8A200FA7D3A /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE741E01B2B5A70002392F4 /* CoreMedia.framework in Frameworks */,
+				7BE741DE1B2B5A2A002392F4 /* CoreVideo.framework in Frameworks */,
 				7B0E731F1B2886A000C1AEC8 /* AssetsLibrary.framework in Frameworks */,
 				7B0E731D1B28869500C1AEC8 /* AVFoundation.framework in Frameworks */,
 				AD83E9231B18834D005359BB /* libiconv.dylib in Frameworks */,
@@ -192,6 +198,8 @@
 		9D7E6C0B1848857D003D9E06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BE741DF1B2B5A70002392F4 /* CoreMedia.framework */,
+				7BE741DD1B2B5A2A002392F4 /* CoreVideo.framework */,
 				7B0E731E1B2886A000C1AEC8 /* AssetsLibrary.framework */,
 				7B0E731C1B28869500C1AEC8 /* AVFoundation.framework */,
 				AD83E9221B18834D005359BB /* libiconv.dylib */,
